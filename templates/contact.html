@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+  </head>
+  <body id="contact">
+    <header>
+      <div class="logo">
+        <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
+      </div>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="{{ url_for('works')}}">Works</a></li>
+          <li><a href="{{ url_for('about')}}">About</a></LI>
+          <li><a href="{{ url_for('contact')}}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <div class="main-center">
+          <h1>Contact</h1>
+          <p>お問い合わせ、ご相談のページです。お気軽にお問い合わせください。</p>
+          <section class="access clearfix">
+            <h2 class="icon">Access</h2>
+            <table>
+              <tr>
+                <th>所在地住所</th>
+                <td>〒123-4567<br>兵庫県明石市大久保町西岡○○○-123</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td>012-345-6789</td>
+              </tr>
+              <tr>
+                <th>電車でのアクセス</th>
+                <td>JR神戸線「大久保」駅より車で15分</td>
+              </tr>
+              <tr>
+                <th>お車でのアクセス</th>
+                <td>第二神明道路大久保ICより5分</td>
+              </tr>
+            </table>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.05382924325!2d134.93811423596452!3d34.71079350797044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554d5ea120d4ebd%3A0x69635a40cb334e84!2z44Kr44OK44O844OI6KW_56We5oi45bqX!5e0!3m2!1sja!2sjp!4v1555222772010!5m2!1sja!2sjp" width="460" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </section>
+          <section>
+            <h2 class="icon">Contact form</h2>
+            <div class="form">
+              <form>
+                <dl>
+                  <dt><span class="required">お名前</span></dt>
+                  <dd><input type="text" name="name" class="name" required></dd>
+                  <dt><span class="required">メールアドレス</span></dt>
+                  <dd><input type="email" name="email" class="email" required></dd>
+                  <dt>お電話番号</dt>
+                  <dd><input type="tel" name="tel" class="tel"></dd>
+                  <dt>お問い合わせ種別</dt>
+                  <dd>
+                    <select name="type" class="type">
+                      <option value="相談">相談</option>
+                      <option value="質問">質問</option>
+                      <option value="その他お問い合わせ">その他お問い合わせ</option>
+                    </select>
+                  </dd>
+                  <dt>ご希望のご連絡方法</dt>
+                  <dd>
+                    <input type="radio" name="contact" value="Eメール">Eメール
+                    <input type="radio" name="contact" value="お電話">お電話
+                  </dd>
+                  <dt>メッセージ</dt>
+                  <dd>
+                    <textarea name="message" class="message"></textarea>
+                  </dd>
+                </dl>
+                <button type="submit" class="btn">送信</button>
+              </form>
+              <div class="attention">
+                <p>※「<span class="required"></span>」の付いている項目は必須項目です。<br>※メッセージ送信後、48時間以内に担当者よりご連絡いたします。</p>
+              </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <small>2019 Kazuya.H</small>
+    </footer>
+  </body>
+</html>

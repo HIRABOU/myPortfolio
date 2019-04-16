@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+  </head>
+  <body id="about">
+    <header>
+      <div class="logo">
+        <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
+      </div>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="{{ url_for('works')}}">Works</a></li>
+          <li><a href="{{ url_for('about')}}">About</a></LI>
+          <li><a href="{{ url_for('contact')}}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <div class="main-center">
+          <h1>About</h1>
+          <section class="profile clearfix">
+            <div class="profile-txt">
+              <h2 class="icon">Profile</h2>
+              <p><span>名前 : Kazuya Hirakawa</span><br>所在地 : 兵庫県内<br>経歴 : 大学院修了後、食品製造業の会社員として５年程働く<br>生物情報系に憧れを抱き、プログラミングの勉強を始める<br>学習内容 : Ruby, Ruby on Rails, HTTP/CSS. Javascript, Python<br></p>
+            </div>
+            <img src="../static/images/about-profile.png" alt="山田太郎プロフィール画像" class="profile-image">
+          </section>
+          <section class="career">
+            <h2 class="icon">Carrer and Job history</h2>
+            <table>
+              <tr>
+                <th>2014年3月</th>
+                <td>工学研究科 生物応用工学専攻 修了  食品製造業の会社に入社</td>
+              </tr>
+              <tr>
+                <th>2019年1月</th>
+                <td>エンジニアを志して退社、Tech::Expertに入学</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <small>2019 Kazuya.H</small>
+    </footer>
+  </body>
+</html>

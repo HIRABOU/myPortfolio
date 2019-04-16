@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HIRABO Portfolio Website</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+    <link href="../static/images/favicon.ico" rel="shortcut icon"
+  </head>
+  <body id="index">
+    <header>
+      <div class="logo">
+        <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
+      </div>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="{{ url_for('works')}}">Works</a></li>
+          <li><a href="{{ url_for('about')}}">About</a></li>
+          <li><a href="{{ url_for('contact')}}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrap">
+      <div class="content">
+        <h1>If you can dream it, you can do it.</h1>
+        <p>人生に便利さと彩りを！<br>遅すぎることなどない、挑戦し続けよう！</p>
+        <p class="btn"><a href="{{ url_for('works')}}">My Works</a></p>
+      </div>
+    </div>
+    <footer>
+      <small>2019 Kazuya.H</small>
+    </footer>
+  </body>
+</html>
