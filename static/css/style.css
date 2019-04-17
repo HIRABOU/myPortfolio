@@ -37,7 +37,7 @@ a:hover {
 
 header {
   width: 960px;
-  height: 100px;
+  height: 20px;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ header {
 .global-nav li {
   float: left;
   margin: 0 20px;
-  font-size: 20px;
+  font-size: 30px;
   list-style: none;
   font-family: 'Bitter', serif;
 }
@@ -145,7 +145,7 @@ footer small {
 }
 
 #about {
-  background-image: url(../images/bg-about.jpg);
+  background-image: url(../images/bg-photograph.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
@@ -225,14 +225,6 @@ table {
   background-color: transparent;
 }
 
-#portfolio {
-  background-image: url(../images/bg-portfolio.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-size: 100% auto;
-}
-
 .main {
   width: 940px;
   margin: 0 10px;
@@ -263,7 +255,7 @@ a img:hover {
   color: #333333;
 }
 
-#photograph {
+#works {
   background-image: url(../images/bg-photograph.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -271,13 +263,13 @@ a img:hover {
   background-size: 100% auto;
 }
 
-#photograph .photograph-list li {
+#works .application-list li {
   float: left;
   list-style: none;
   margin: 0 20px 15px 0;
 }
 
-#photograph .photograph-list li:nth-child(3n) {
+#works .application-list li:nth-child(3n) {
   /* margin-right: 0; */
 }
 
@@ -290,7 +282,7 @@ a img:hover {
 }
 
 #contact {
-  background-image: url(../images/bg-contact.jpg);
+  background-image: url(../images/bg-photograph.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
@@ -402,19 +394,21 @@ a img:hover {
 
   header {
     width: auto;
+    height: 200px;
     margin: 0 5%;
   }
 
   .logo {
     float: none;
-    margin-top: 60px;
+    margin-top: 10px;
     text-align: center;
   }
 
   .global-nav {
     float: none;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
+    display: flex;
   }
 
   .global-nav li {
@@ -424,12 +418,16 @@ a img:hover {
   }
 
   #wrap {
-    margin-top: 40px;
-    padding: 35px 0 0;
+    margin-top: 25px;
+    /* padding-left: 15px; */
   }
 
   .content {
     width: 100%;
+  }
+
+  #index .content {
+    margin-top: 30px;
   }
 
   .main {
@@ -442,10 +440,6 @@ a img:hover {
     max-width: 100%;
   }
 
-  #portfolio {
-    background-image: url(../images/bg-portfolio-sp.jpg)
-  }
-
   .sidebar {
     width: auto;
     float: none;
@@ -453,8 +447,90 @@ a img:hover {
     padding: 30px 10% 10px;
     background-color: #f7f6f4;
   }
-}
 
-#photograph #wrap {
+  #index footer {
+    width: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #index #wrap {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+
+  #wrap {
+    padding:
+  }
+
+  #index .theme {
+    font-size: 40px;
+  }
+
+  .main-center {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  #works {
+    background-size: 200%;
+  }
+
+  .application-list {
+    padding-left: 50px;
+  }
+
+  #about .profile-txt {
+    width: auto;
+  }
+
+  #about .profile-image {
+    float: none;
+  }
+
+  #about {
+    background-size: 200%;
+  }
+
+  #contact .access td {
+    padding-left: 10px;
+  }
   
+  #contact .form {
+    padding: 10px 20px;
+  }
+
+  #contact .form .message {
+    width: 200px;
+  }
+
+  #contact .form .email {
+    width: 200px;
+  }
+
+  #contact .form .tel {
+    width: 200px;
+  }
+
+  #contact .form .name {
+    width: 200px;
+  }
+
+  #contact .form button {
+    margin: auto;
+  }
+
+  #contact .form .attention {
+    margin: 10px 0 0 0;
+  }
+
+  #contact {
+    background-size: 200%;
+  }
+
+  #contact .access iframe {
+    float: none;
+    width:340px;
+  }
+
 }
