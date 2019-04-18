@@ -8,3 +8,10 @@
 //   }
 //   });
 // });
+
+
+// $(function(){
+//   Barba.Pjax.init();
+// });
+
+// Barba.Pjax.start()

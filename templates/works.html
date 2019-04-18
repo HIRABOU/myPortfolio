@@ -9,46 +9,51 @@
     <link href="../static/images/favicon.ico" rel="shortcut icon">
     <script type="text/javascript" charset="utf-8" src="../static/js/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="../static/js/barba.min.js"></script>
   </head>
   <body id="works">
-    <header>
-      <div class="logo">
-        <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
-      </div>
-      <nav>
-        <ul class="global-nav">
-          <li><a href="{{ url_for('works')}}">Works</a></li>
-          <li><a href="{{ url_for('about')}}">About</a></LI>
-          <li><a href="{{ url_for('contact')}}">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrap" class="clearfix ">
-      <div class="content">
-        <div class="main-center">
-          <h1>My Works</h1>
-          <p>これまでに作成したアプリケーションを掲載しています。</p>
-          <section id="Application" class="clearfix">
-            <h2 class="icon">Web Application</h2>
-            <ul class="application-list">
-              <li><a href="http://52.69.116.250" target="_blank"><img src="../static/images/chat-space.png" alt="chat-space"></a></li>
-              <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
-              <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <header>
+          <div class="logo">
+            <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
+          </div>
+          <nav>
+            <ul class="global-nav">
+              <li><a href="{{ url_for('works')}}">Works</a></li>
+              <li><a href="{{ url_for('about')}}">About</a></LI>
+              <li><a href="{{ url_for('contact')}}">Contact</a></li>
             </ul>
-          </section>
-          <section id="tools" class="clearfix">
-            <h2 class="icon">Tools</h2>
-            <ul class="application-list">
-              <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
-              <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
-              <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
-            </ul>
-          </section>
+          </nav>
+        </header>
+        <div id="wrap" class="clearfix ">
+          <div class="content">
+            <div class="main-center">
+              <h1>My Works</h1>
+              <p>これまでに作成したアプリケーションを掲載しています。</p>
+              <section id="Application" class="clearfix">
+                <h2 class="icon">Web Application</h2>
+                <ul class="application-list">
+                  <li><a href="http://52.69.116.250" target="_blank"><img src="../static/images/chat-space.png" alt="chat-space"></a></li>
+                  <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
+                  <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
+                </ul>
+              </section>
+              <section id="tools" class="clearfix">
+                <h2 class="icon">Tools</h2>
+                <ul class="application-list">
+                  <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
+                  <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
+                  <li><img src="../static/images/comingsoon.jpg" alt="comingsoon"></li>
+                </ul>
+              </section>
+            </div>
+          </div>
         </div>
+        <footer>
+          <small>2019 Kazuya.H</small>
+        </footer>
       </div>
     </div>
-    <footer>
-      <small>2019 Kazuya.H</small>
-    </footer>
   </body>
 </html>

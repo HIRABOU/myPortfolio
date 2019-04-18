@@ -9,29 +9,34 @@
     <link href="../static/images/favicon.ico" rel="shortcut icon">
     <script type="text/javascript" charset="utf-8" src="../static/js/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="../static/js/barba.min.js"></script>
   </head>
   <body id="index">
-    <header>
-      <div class="logo">
-        <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
-      </div>
-      <nav>
-        <ul class="global-nav">
-          <li><a href="{{ url_for('works')}}">Works</a></li>
-          <li><a href="{{ url_for('about')}}">About</a></li>
-          <li><a href="{{ url_for('contact')}}">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrap">
-      <div class="content">
-        <h1 class="theme">If you can dream it, you can do it.</h1>
-        <p>人生に便利さと彩りを！<br>遅すぎることなどない, 挑戦し続けよう！</p>
-        <p class="btn" id="btn"><a href="{{ url_for('works')}}">My Works</a></p>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <header>
+          <div class="logo">
+            <a href="{{ url_for('index')}}"><img src="../static/images/logo.png" alt="SNAPPERS"></a>
+          </div>
+          <nav>
+            <ul class="global-nav">
+              <li><a href="{{ url_for('works')}}">Works</a></li>
+              <li><a href="{{ url_for('about')}}">About</a></li>
+              <li><a href="{{ url_for('contact')}}">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="wrap">
+          <div class="content">
+            <h1 class="theme">If you can dream it, you can do it.</h1>
+            <p>人生に便利さと彩りを！<br>遅すぎることなどない, 挑戦し続けよう！</p>
+            <p class="btn" id="btn"><a href="{{ url_for('works')}}">My Works</a></p>
+          </div>
+        </div>
+        <footer>
+          <small>2019 Kazuya.H</small>
+        </footer>
       </div>
     </div>
-    <footer>
-      <small>2019 Kazuya.H</small>
-    </footer>
   </body>
 </html>
